@@ -203,4 +203,11 @@ export function canEnterClub(you, date) {
  */
 export function shouldAnswerPhone(isMorning, isBoss, isAsleep) {
   /* TODO */
+   if (isAsleep) {
+    return false;
+  }
+  if (isMorning && !isBoss) {
+    return false;
+  }
+  return true;
 }
