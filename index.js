@@ -72,6 +72,7 @@ export function near100(n, distance) {
  */
 export function isMultiple35(n) {
   /* TODO */
+  return n % 3 === 0 || n % 5 === 0;
 }
 
 /**
@@ -90,6 +91,7 @@ export function isMultiple35(n) {
  */
 export function shareLastDigit(num1, num2) {
   /* TODO */
+  return Math.abs(num1) % 10 === Math.abs(num2) % 10;
 }
 
 /**
