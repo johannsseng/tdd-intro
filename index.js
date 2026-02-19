@@ -109,6 +109,8 @@ export function shareLastDigit(num1, num2) {
  */
 export function isColdAndHot(temp1, temp2) {
   /* TODO */
+  return (temp1 < 0 && temp2 > 100) || (temp2 < 0 && temp1 > 100)
+  
 }
 
 /**
